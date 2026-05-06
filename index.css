@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li>a:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-link {
+    color: white;
+    text-decoration: none;
+    background: cornflowerblue;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.home {
+    display: block;
+}
+
+.banner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.heading {
+    text-align: center;
+    margin: 20px;
+    font-size: 28px;
+}
+
+.paragraph {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+#login {
+    display: none;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#login:target {
+    display: flex;
+}
+
+#login:target~.home {
+    display: none;
+}
+
+.login-box {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 8px;
+}
+
+.login-box h2 {
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    color: white;
+    border: none;
+}
